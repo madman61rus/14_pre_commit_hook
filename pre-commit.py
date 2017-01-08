@@ -18,11 +18,11 @@ if __name__ == '__main__' :
     testing_file = ''
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--test", required=True, help="path to a file with tests")
+    parser.add_argument("-t", "--tests", required=True, help="path to a file with tests")
     parser.add_argument("-f", "--file", help="path to a testing file")
     args = parser.parse_args()
 
-    if args.test == 0 :
+    if args.tests == 0 :
         print('Тесты прошли удачно')
     else:
         print('Тесты выявили ошибку')
